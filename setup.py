@@ -1,9 +1,13 @@
 from setuptools import find_packages, setup
 
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
 setup(
     name="mlflow-webhdfs",
     version="0.0.1",
     description="MLflow WebHDFS Plugins",
+    long_description=long_description,
     packages=find_packages(),
     author="roach231428",
     author_email="roach231428@gmail.com",
